@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <script src="courses.js"></script>
     <!-- Main container -->
     <div class="default">
         <div class="div">
@@ -62,7 +63,13 @@
                 <div class="rectangle-2">
                     <div class="container mt-4">
                         <!-- Content goes here (e.g., login form) -->
-
+                        <select id="studentDropdown" onchange="studentSelected()">
+                            <option value="">Select a student</option>
+                            <!--<?php foreach($students as $student): ?>-->
+                                <!--<option value="<?= $student['id'] ?>"><?= $student['name'] ?></option>-->
+                                <option value="student">test</option>
+                           <!---- <?php endforeach; ?>-->
+                        </select>
                     </div>
                     <!-- End of Login container -->
                 </div>
