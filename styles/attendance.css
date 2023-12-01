@@ -6,13 +6,6 @@
     width: 20%;
 }
 
-/* .default .div {
-    background-color: #ffffff;
-    width: 1000px;
-    height: 400px;
-    position: relative;
-} */
-
 .default .overlap {
     position: absolute;
     width: 199px;
@@ -68,9 +61,6 @@
     line-height: normal;
 }
 
-/* Add this code to your existing CSS files */
-/* Add this code to your existing CSS files */
-
 .text-wrapper a {
     color: inherit;
     text-decoration: none;
@@ -101,19 +91,9 @@
 .text-wrap:hover {
     background-color: #fff;
     background-size: auto;
-    /* White background on hover */
     color: #000;
     text-decoration: none;
-    /* Black text on hover */
 }
-
-/* .default .article {
-    position: absolute;
-    width: 28px;
-    height: 28px;
-    top: 0;
-    left: 0;
-} */
 
 .default .monthly-report {
     position: absolute;
@@ -196,9 +176,7 @@
     position: absolute;
     width: 150px;
     top: 20px;
-    /* Adjust the top position as needed */
     left: -20px;
-    /* Adjust the left position as needed */
 }
 
 .default .text-wrapper-4 {
@@ -280,7 +258,7 @@
 .default .rectangle-wrapper {
     position: absolute;
     width: 930px;
-    height: 400px;
+    height: 450px;
     top: 113px;
     left: 199px;
     background-color: #dfdfdf;
