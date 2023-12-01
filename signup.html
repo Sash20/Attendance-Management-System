@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Honeyhill Community Transformation Centre</title>
     <!-- Global and page-specific styles -->
-    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="global.css" />
     <link rel="stylesheet" href="styles/styles.css" />
     <!-- Bootstrap styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -20,37 +20,21 @@
             <!-- Navigation and logo section -->
             <div class="overlap">
                 <div class="rectangle"></div>
-                <!-- Course management link -->
-                <div class="course-management">
-                    <div class="text-wrap">
-                        <a href="course.html">Course <br />Management</a>
-                    </div>
-                </div>
-                <!-- Monthly report link -->
-                <div class="monthly-report">
-                    <div class="text-wrapper">
-                        <a href="reports.html">Monthly reports</a>
-                    </div>
-                </div>
+
                 <!-- Attendance link with logo -->
                 <div class="attendance">
                     <div class="text-wrapper">
                         <a href="attendance.html">Attendance</a>
                     </div>
-                    <img src="images/logoo.png" alt="" class="absolute-image" href="">
+                    <img src="images/logoo.png" alt="" class="absolute-image" href="signup.html">
                 </div>
-                <!-- (Optional) Logo section -->
-                <!-- <div class="logo">
-                    <div class="overlap-group">
-                        <img src="images/logoo.png" alt="" class="absolute-image">
-                    </div>
-                </div> -->
             </div>
+
             <!-- Page bar section -->
             <div class="page-bar"><img class="line-2" src="img/line-3.svg" /></div>
             <!-- Centered text sections -->
             <div class="text-wrapper-6">Honeyhill Community Transformation Centre</div>
-            <div class="text-wrapper-7">Admin</div>
+            <div class="text-wrapper-7">Student</div>
             <!-- Image divider -->
             <img class="line-3" src="img/line-4.svg" />
             <!-- Rectangle wrapper for content -->
@@ -58,17 +42,17 @@
                 <div class="rectangle-2">
                     <div class="container mt-4">
                         <!-- Login form -->
-                        <form>
+                        <!-- Login form -->
+                        <form id="loginForm">
                             <div class="form-group">
-                                <label for="username">Username</label>
-                                <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                                <label for="username">ID Number</label>
+                                <input type="text" class="form-control" id="username" placeholder="Enter your ID Number">
                             </div>
                             <div class="form-group">
                                 <label for="password">Password</label>
-                                <input type="password" class="form-control" id="password"
-                                    placeholder="Enter your password">
+                                <input type="password" class="form-control" id="password" placeholder="Enter your password">
                             </div>
-                            <button type="submit" class="btn btn-primary" href="attendance.html">Login</button>
+                            <button type="button" class="btn btn-primary" onclick="validateLogin()">Login</button>
                         </form>
                     </div>
                     <!-- End of Login container -->
@@ -80,7 +64,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
