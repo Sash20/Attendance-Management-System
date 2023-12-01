@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Honeyhill Community Transformation Centre</title>
+    <title>Honeyhill Community | Transformation Centre</title>
     <!-- Global styles -->
-    <link rel="stylesheet" href="globals.css" />
     <!-- Attendance page styles -->
     <link rel="stylesheet" href="styles/attendance.css" />
     <!-- Bootstrap styles -->
@@ -20,16 +19,6 @@
             <!-- Navigation and logo section -->
             <div class="overlap">
                 <div class="rectangle"></div>
-                <div class="course-management">
-                    <div class="text-wrap">
-                        <a href="course.html">Course <br />Management</a>
-                    </div>
-                </div>
-                <div class="monthly-report">
-                    <div class="text-wrapper">
-                        <a href="reports.html">Monthly reports</a>
-                    </div>
-                </div>
                 <div class="attendance">
                     <div class="text-wrapper">
                         <a href="attendance.html">Attendance</a>
@@ -62,32 +51,41 @@
                                         <b>
                                             <label for="studentName">Name:</label>
                                         </b>
-                                        <p class="card-text" id="studentName">John Doe</p>
+                                        <p class="card-text" id="studentName"></p>
                                     </div>
                                     <!-- User ID field -->
                                     <div class="form-group">
                                         <b>
                                             <label for="studentID">ID Number:</label>
                                         </b>
-                                        <p class="card-text" id="studentID">123456</p>
+                                        <p class="card-text" id="studentID"></p>
                                     </div>
                                     <!-- User subjects field -->
                                     <div class="form-group">
                                         <b>
                                             <label for="studentSubjects">Subjects:</label>
                                         </b>
-                                        <p class="card-text" id="studentSubjects">
-                                            <!-- You need to replace these with actual data -->
-                                            Subject 1, Subject 2, Subject 3
-                                        </p>
+                                        <ul id="studentSubjects">
+                                            <!-- Courses will be dynamically added here -->
+                                        </ul>
                                     </div>
                                 </form>
                             </div>
                         </div>
                         <!-- Centered buttons for clock-in and clock-out -->
                         <div class="text-center mt-4">
-                            <button type="button" class="btn btn-dark mr-2">Clock-In</button>
-                            <button type="button" class="btn btn-dark">Clock-Out</button>
+                            <button type="button" class="btn btn-dark mr-2" onclick="clockIn()">Clock-In</button>
+                            <button type="button" class="btn btn-dark" onclick="clockOut()">Clock-Out</button>
+                        </div>
+
+                        <!-- Button for viewing all logs -->
+                        <div class="text-center mt-1">
+                            <button type="button" class="btn btn-dark" onclick="displayAllLogs()">View All Logs</button>
+                        </div>
+
+                        <!-- Display area for logs -->
+                        <div id="logsDisplay" class="mt-4">
+                            <!-- Logs will be displayed here -->
                         </div>
                     </div>
                     <!-- End of Card and Buttons -->
@@ -99,13 +97,11 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="scripts/attendance.js"></script>
 
     <!-- Your sign-out function goes here (replace with your actual sign-out logic) -->
     <script>
-        function signOut() {
-            // Add your sign-out logic here
-            alert("Signing out...");
-        }
+
     </script>
 </body>
 
