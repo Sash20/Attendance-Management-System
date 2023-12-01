@@ -1,42 +1,36 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const signupForm = document.getElementById('signupForm');
-    const errorMessage = document.getElementById('errorMessage');
+var attendance = [
+  { studentID: 498356, fullName: 'Sashoy Morris', password: 'sashoy123', subjects: ['MATH5006', 'ENG1007', 'SOST1304'], arrDate: "", arrTime: "", depDate: "", depTime: "" },
+  { studentID: 726149, fullName: 'Brianna Anderson', password: 'brianna456', subjects: ['MATH1008', 'ENG1007'], arrDate: "", arrTime: "", depDate: "", depTime: "" },
+  { studentID: 315684, fullName: 'Tiffany Thompson', password: 'tiffany789', subjects: ['SOST1304', 'SOCI1809'], arrDate: "", arrTime: "", depDate: "", depTime: "" },
+  { studentID: 890237, fullName: 'Keneel Thomas', password: 'keneel101', subjects: ['MATH5006', 'ENG1007', 'MATH1008'], arrDate: "", arrTime: "", depDate: "", depTime: "" },
+  { studentID: 642507, fullName: 'Jordon Porter', password: 'jordon2022', subjects: ['SOST1304', 'SOCI1809'], arrDate: "", arrTime: "", depDate: "", depTime: "" },
+];
 
-    signupForm.addEventListener('submit', function (event) {
-        event.preventDefault();
 
-        const username = document.getElementById('username').value;
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('password').value;
-        const confirmPassword = document.getElementById('confirmPassword').value;
+function validateLogin() {
+    // Get input values
+    var inputID = document.getElementById('username').value;
+    var inputPassword = document.getElementById('password').value;
 
-        // Check if the passwords match
-        if (password !== confirmPassword) {
-            errorMessage.textContent = "Passwords do not match!";
-            return; // Stop the function if passwords do not match
-        } else {
-            errorMessage.textContent = ""; // Clear any previous error message
-        }
+    // Check if ID and password match
+    var student = validateCredentials(inputID, inputPassword);
 
-        // Save user information to localStorage
-        saveUserInformation(username, email, password);
+    if (student) {
+        // Redirect to the attendance page
+        window.location.href = "attendance.html";
 
-        // Clear form fields
-        signupForm.reset();
-    });
-
-    function saveUserInformation(username, email, password) {
-        // Retrieve existing user data from localStorage
-        const users = JSON.parse(localStorage.getItem('users')) || [];
-
-        // Add new user to the array
-        users.push({
-            username: username,
-            email: email,
-            password: password
-        });
-
-        // Save the updated user data back to localStorage
-        localStorage.setItem('users', JSON.stringify(users));
+        // Store student information in local storage for use in the attendance page
+        localStorage.setItem('studentID', student.studentID);
+        localStorage.setItem('fullName', student.fullName);
+    } else {
+        // Display an error message (you can customize this part)
+        alert("Invalid ID or password. Please try again.");
     }
-});
+}
+
+function validateCredentials(inputID, inputPassword) {
+    // Find the student with matching ID and password
+    var student = attendance.find(s => s.studentID === parseInt(inputID) && s.password === inputPassword);
+
+    return student;
+}
