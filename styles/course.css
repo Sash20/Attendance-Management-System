@@ -68,8 +68,6 @@
     line-height: normal;
 }
 
-/* Add this code to your existing CSS files */
-/* Add this code to your existing CSS files */
 
 .text-wrapper a {
     color: inherit;
@@ -92,19 +90,17 @@
 .text-wrapper:hover {
     background-color: #fff;
     background-size: auto;
-    /* White background on hover */
+ 
     color: #000;
     text-decoration: none;
-    /* Black text on hover */
+
 }
 
 .text-wrap:hover {
     background-color: #fff;
     background-size: auto;
-    /* White background on hover */
     color: #000;
     text-decoration: none;
-    /* Black text on hover */
 }
 
 /* .default .article {
@@ -196,9 +192,7 @@
     position: absolute;
     width: 150px;
     top: 20px;
-    /* Adjust the top position as needed */
     left: -20px;
-    /* Adjust the left position as needed */
 }
 
 .default .text-wrapper-4 {
@@ -293,6 +287,12 @@
     top: 20px;
     left: 38px;
     background-color: #ffffff;
+}
+
+#messageDis{
+    position: relative;
+    left: 250px;
+    top: 100px;
 }
 
 .text-wrapper-7 span {
