@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honeyhill Community | Transformation Centre</title>
+    <!-- Global styles -->
+    <!-- Attendance page styles -->
+    <link rel="stylesheet" href="styles/attendance.css" />
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Main container -->
+    <div class="default">
+        <div class="div">
+            <!-- Navigation and logo section -->
+            <div class="overlap">
+                <div class="rectangle"></div>
+                <div class="attendance">
+                    <div class="text-wrapper">
+                        <a href="attendance.html">Attendance</a>
+                    </div>
+                    <img src="images/logoo.png" alt="" class="absolute-image" href="">
+                </div>
+            </div>
+            <!-- Page bar section -->
+            <div class="page-bar"><img class="line-2" src="img/line-3.svg" /></div>
+            <!-- Centered text sections -->
+            <div class="text-wrapper-6">Honeyhill Community Transformation Centre</div>
+            <div class="text-wrapper-7">
+                <!-- User role and sign-out button -->
+                <span>Student</span>
+                <button class="btn btn-dark ml-4" onclick="signOut()">Sign Out</button>
+            </div>
+            <!-- Image divider -->
+            <img class="line-3" src="img/line-4.svg" />
+            <!-- Card wrapper for user information -->
+            <div class="rectangle-wrapper">
+                <div class="rectangle-2">
+                    <div class="container mt-4">
+                        <!-- Bootstrap Card for Information -->
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- User information form -->
+                                <form>
+                                    <!-- User name field -->
+                                    <div class="form-group">
+                                        <b>
+                                            <label for="studentName">Name:</label>
+                                        </b>
+                                        <p class="card-text" id="studentName"></p>
+                                    </div>
+                                    <!-- User ID field -->
+                                    <div class="form-group">
+                                        <b>
+                                            <label for="studentID">ID Number:</label>
+                                        </b>
+                                        <p class="card-text" id="studentID"></p>
+                                    </div>
+                                    <!-- User subjects field -->
+                                    <div class="form-group">
+                                        <b>
+                                            <label for="studentSubjects">Subjects:</label>
+                                        </b>
+                                        <ul id="studentSubjects">
+                                            <!-- Courses will be dynamically added here -->
+                                        </ul>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Centered buttons for clock-in and clock-out -->
+                        <div class="text-center mt-4">
+                            <button type="button" class="btn btn-dark mr-2" onclick="clockIn()">Clock-In</button>
+                            <button type="button" class="btn btn-dark" onclick="clockOut()">Clock-Out</button>
+                        </div>
+
+                        <!-- Button for viewing all logs -->
+                        <div class="text-center mt-1">
+                            <button type="button" class="btn btn-dark" onclick="displayAllLogs()">View All Logs</button>
+                        </div>
+
+                        <!-- Display area for logs -->
+                        <div id="logsDisplay" class="mt-4">
+                            <!-- Logs will be displayed here -->
+                        </div>
+                    </div>
+                    <!-- End of Card and Buttons -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS and Popper.js scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="scripts/attendance.js"></script>
+
+    <!-- Your sign-out function goes here (replace with your actual sign-out logic) -->
+    <script>
+
+    </script>
+</body>
+
+</html>

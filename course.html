@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Document metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honeyhill Community Transformation Centre</title>
+    <link rel="stylesheet" href="styles/course.css" />
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/courses.js"></script>
+</head>
+
+<body>
+    
+    <!-- Main container -->
+    <div class="default">
+        <div class="div">
+            <!-- Navigation and logo section -->
+            <div class="overlap">
+                <div class="rectangle"></div>
+                <!-- Course management link -->
+                <div class="course-management">
+                    <div class="text-wrap">
+                        <a href="course.html">Course <br />Management</a>
+                    </div>
+                </div>
+                <!-- Monthly report link -->
+                <div class="monthly-report">
+                    <div class="text-wrapper">
+                        <a href="reports.html">Monthly reports</a>
+                    </div>
+                </div>
+                <!-- Attendance link with logo -->
+                <div class="attendance">
+                    <img src="images/logoo.png" alt="" class="absolute-image" href="">
+                </div>
+                <!-- (Optional) Logo section -->
+                <!-- <div class="logo">
+                    <div class="overlap-group">
+                        <img src="images/logoo.png" alt="" class="absolute-image">
+                    </div>
+                </div> -->
+            </div>
+            <!-- Page bar section -->
+            <!-- Centered text sections -->
+            <div class="text-wrapper-6">Honeyhill Community Transformation Centre</div>
+            <div class="text-wrapper-7">
+                <!-- User role and sign-out button -->
+                <span>Admin</span>
+                <button class="btn btn-dark ml-4" onclick="signOut()">Sign Out</button>
+            </div>
+            <!-- Image divider -->
+           
+            <!-- Rectangle wrapper for content -->
+            <div class="rectangle-wrapper">
+                <div class="rectangle-2">
+                    <div class="container mt-4">
+                        
+                        <div class="modal fade" id="addCourseModal" tabindex="-1" role="dialog" aria-labelledby="addCourseModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="addCourseModalLabel">Add New Course</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <form id="addCourseForm">
+                                    <div class="form-group">
+                                      <label for="courseCode">Course Code</label>
+                                      <input type="text" class="form-control" id="courseCode" name="course_code" required>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="courseName">Course Name</label>
+                                      <input type="text" class="form-control" id="courseName" name="course_name" required>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="courseDetail">Course Detail</label>
+                                      <textarea class="form-control" id="courseDetail" name="detail" required></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="startDate">Start Date</label>
+                                      <input type="date" class="form-control" id="startDate" name="start_date" required>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="endDate">End Date</label>
+                                      <input type="date" class="form-control" id="endDate" name="end_date" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <!--<div class="mt-8">
+                      <button type="button" class="btn btn-dark mr-4" data-toggle="modal" data-target="#addCourseModal">Add Course</button>
+                      <button id="showRemoveCourseInput" class="btn btn-dark">Remove Course</button>
+                  </div>-->
+                  
+                  <div id="messageDis">
+                    <div id="removeCourseSection" style="display: none;">
+                        <input type="text" id="courseToRemove" placeholder="Enter Course Code or Name">
+                        <button id="removeCourseBtn" class="btn btn-dark">Remove</button>
+                    </div>
+                      <div id="messageDiv"></div>
+                  </div>
+                    <!-- End of Login container -->
+                </div>
+                <center>
+                    <div class="mt-8">
+                        <button type="button" class="btn btn-dark mr-4" data-toggle="modal" data-target="#addCourseModal">Add Course</button>
+                        <button id="showRemoveCourseInput" class="btn btn-dark">Drop Course</button>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

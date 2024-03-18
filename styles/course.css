@@ -1,0 +1,304 @@
+.default {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 20%;
+}
+
+/* .default .div {
+    background-color: #ffffff;
+    width: 1000px;
+    height: 400px;
+    position: relative;
+} */
+
+.default .overlap {
+    position: absolute;
+    width: 199px;
+    height: 200px;
+    top: -9px;
+    left: -9px;
+}
+
+.default .rectangle {
+    width: 170px;
+    height: 571px;
+    background-color: #393939;
+}
+
+.default .line {
+    position: absolute;
+    width: 1px;
+    height: 1024px;
+    left: 42px;
+    object-fit: cover;
+}
+
+.default .course-management {
+    position: absolute;
+    top: 366px;
+    left: 18px;
+}
+
+.default .text-wrapper {
+    top: 0;
+    width: 160px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    font-family: "Bebas Neue-Regular", Helvetica;
+    font-weight: 400;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.default .text-wrap {
+    top: 0;
+    width: 160px;
+    height: 40px;
+    padding-left: 10px;
+    font-family: "Bebas Neue-Regular", Helvetica;
+    font-weight: 400;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+
+.text-wrapper a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.text-wrapper a:hover {
+    text-decoration: underline;
+}
+
+.text-wrap a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.text-wrap a:hover {
+    text-decoration: underline;
+}
+
+.text-wrapper:hover {
+    background-color: #fff;
+    background-size: auto;
+ 
+    color: #000;
+    text-decoration: none;
+
+}
+
+.text-wrap:hover {
+    background-color: #fff;
+    background-size: auto;
+    color: #000;
+    text-decoration: none;
+}
+
+/* .default .article {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 0;
+    left: 0;
+} */
+
+.default .monthly-report {
+    position: absolute;
+    width: 165px;
+    height: 28px;
+    top: 293px;
+    left: 18px;
+}
+
+.default .text-wrapper-2 {
+    position: absolute;
+    top: 0;
+    left: 33px;
+    font-family: "Bebas Neue-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 23px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.default .vector {
+    height: 21px;
+    top: 2px;
+    position: absolute;
+    width: 21px;
+    left: 0;
+}
+
+.default .attendance {
+    position: absolute;
+    width: 123px;
+    height: 28px;
+    top: 220px;
+    left: 18px;
+}
+
+.default .attendance img {
+    position: absolute;
+    width: 180px;
+    height: 150px;
+    top: -215px;
+}
+
+.default .text-wrapper-3 {
+    position: absolute;
+    top: 0;
+    left: 32px;
+    font-family: "Bebas Neue-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 23px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.default .img {
+    height: 23px;
+    top: 1px;
+    position: absolute;
+    width: 12px;
+    left: 0;
+}
+
+.default .logo {
+    position: absolute;
+    width: 89px;
+    height: 129px;
+    top: 0;
+    left: 40px;
+}
+
+.default .overlap-group {
+    position: relative;
+    width: 85px;
+    height: 129px;
+}
+
+.default .absolute-image {
+    position: absolute;
+    width: 150px;
+    top: 20px;
+    left: -20px;
+}
+
+.default .text-wrapper-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Jacques Francois Shadow-Regular", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 71px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.default .text-wrapper-5 {
+    position: absolute;
+    top: 35px;
+    left: 27px;
+    font-family: "Jacques Francois Shadow-Regular", Helvetica;
+    font-weight: 600;
+    color: #ffe500;
+    font-size: 71px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.default .page-bar {
+    position: absolute;
+    width: 900px;
+    height: 5px;
+    top: 103px;
+    left: 199px;
+    background-image: url(./img/line-2.svg);
+    background-size: 100% 100%;
+}
+
+.default .line-2 {
+    position: absolute;
+    width: 930px;
+    height: 5px;
+    top: 0;
+    left: 0;
+}
+
+.default .text-wrapper-6 {
+    position: absolute;
+    top: 45px;
+    left: 200px;
+    font-family: "Arial Rounded MT Bold-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 23px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.default .text-wrapper-7 {
+    position: absolute;
+    top: 45px;
+    left: 756px;
+    font-family: "Arial Rounded MT Bold-Regular", Helvetica;
+    font-weight: 400;
+    color: #828282;
+    font-size: 23px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.default .line-3 {
+    position: absolute;
+    width: 5px;
+    height: 49px;
+    top: 34px;
+    left: 700px;
+}
+
+.default .rectangle-wrapper {
+    position: absolute;
+    width: 930px;
+    height: 400px;
+    top: 113px;
+    left: 199px;
+    background-color: #dfdfdf;
+}
+
+.default .rectangle-2 {
+    position: relative;
+    width: 850px;
+    height: 300px;
+    top: 20px;
+    left: 38px;
+    background-color: #ffffff;
+}
+
+#messageDis{
+    position: relative;
+    left: 250px;
+    top: 100px;
+}
+
+.text-wrapper-7 span {
+    margin-right: 194px;
+}
+
+.mt-8 button{
+    margin-top: 30px;
+}
